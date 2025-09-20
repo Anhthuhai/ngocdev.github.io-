@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngọc - Mobile App Developer</title>
+    <meta name="description" content="Personal website of Ngọc - Mobile app developer passionate about healthcare and everyday life solutions">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Ngọc</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#apps" class="nav-link">Mobile Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#medical" class="nav-link">Medical Content</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Daily Life</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Ngọc</span></h1>
+                <p class="hero-subtitle">Mobile App Developer</p>
+                <p class="hero-description">
+                    Passionate about creating meaningful digital tools for healthcare and everyday life.
+                    Welcome to my space where I share my journey, showcase my projects, and offer insights into the development process.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#apps" class="btn btn-primary">View My Apps</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-placeholder">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Apps Section -->
+    <section id="apps" class="section">
+        <div class="container">
+            <h2 class="section-title">Mobile Apps</h2>
+            <p class="section-subtitle">Innovative solutions for healthcare and daily life</p>
+            
+            <div class="apps-grid">
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="app-title">HealthTracker</h3>
+                    <p class="app-description">A comprehensive health monitoring app for tracking vital signs and medical records.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">Healthcare</span>
+                        <span class="feature-tag">React Native</span>
+                    </div>
+                    <a href="#" class="app-link">View Details</a>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="app-title">DailyPlanner</h3>
+                    <p class="app-description">Smart task management and daily planning application with AI-powered suggestions.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">Productivity</span>
+                        <span class="feature-tag">Flutter</span>
+                    </div>
+                    <a href="#" class="app-link">View Details</a>
+                </div>
+
+                <div class="app-card add-app">
+                    <div class="add-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h3>Add New App</h3>
+                    <p>Click to add a new mobile app to your portfolio</p>
+                    <button class="btn btn-primary" onclick="openAddAppModal()">Add App</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Content Section -->
+    <section id="medical" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Medical Content</h2>
+            <p class="section-subtitle">Insights and resources on healthcare technology</p>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="content-header">
+                        <h3>Understanding Medical App Development</h3>
+                        <span class="content-date">December 2024</span>
+                    </div>
+                    <p class="content-excerpt">
+                        Key considerations when developing healthcare applications, including HIPAA compliance, 
+                        user privacy, and medical data security.
+                    </p>
+                    <div class="content-tags">
+                        <span class="tag">Healthcare</span>
+                        <span class="tag">Development</span>
+                        <span class="tag">Privacy</span>
+                    </div>
+                    <a href="#" class="content-link">Read More</a>
+                </div>
+
+                <div class="content-card">
+                    <div class="content-header">
+                        <h3>Mobile Health Monitoring Trends</h3>
+                        <span class="content-date">November 2024</span>
+                    </div>
+                    <p class="content-excerpt">
+                        Exploring the latest trends in mobile health monitoring and how technology 
+                        is revolutionizing patient care.
+                    </p>
+                    <div class="content-tags">
+                        <span class="tag">Trends</span>
+                        <span class="tag">mHealth</span>
+                        <span class="tag">Innovation</span>
+                    </div>
+                    <a href="#" class="content-link">Read More</a>
+                </div>
+
+                <div class="content-card add-content">
+                    <div class="add-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h3>Add Medical Content</h3>
+                    <p>Share your insights on healthcare technology</p>
+                    <button class="btn btn-primary" onclick="openAddContentModal()">Add Content</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Life Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <h2 class="section-title">Daily Life</h2>
+            <p class="section-subtitle">Personal thoughts and experiences</p>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-header">
+                        <h3>My Journey into Mobile Development</h3>
+                        <span class="blog-date">December 15, 2024</span>
+                    </div>
+                    <p class="blog-excerpt">
+                        Reflecting on my path from a curious beginner to a mobile app developer 
+                        focused on healthcare solutions...
+                    </p>
+                    <div class="blog-tags">
+                        <span class="tag">Personal</span>
+                        <span class="tag">Career</span>
+                    </div>
+                    <a href="#" class="blog-link">Read More</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-header">
+                        <h3>Balancing Code and Creativity</h3>
+                        <span class="blog-date">December 10, 2024</span>
+                    </div>
+                    <p class="blog-excerpt">
+                        How I maintain creativity while working on technical projects, 
+                        and the importance of user-centered design...
+                    </p>
+                    <div class="blog-tags">
+                        <span class="tag">Design</span>
+                        <span class="tag">Creativity</span>
+                    </div>
+                    <a href="#" class="blog-link">Read More</a>
+                </article>
+
+                <div class="blog-card add-post">
+                    <div class="add-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h3>Add Blog Post</h3>
+                    <p>Share your daily thoughts and experiences</p>
+                    <button class="btn btn-primary" onclick="openAddPostModal()">Add Post</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-description">
+                        I'm Ngọc, a passionate mobile app developer with a focus on creating meaningful 
+                        digital solutions for healthcare and everyday life. My journey in technology 
+                        is driven by the desire to make a positive impact through innovative applications.
+                    </p>
+                    <p class="about-description">
+                        With expertise in React Native and Flutter, I specialize in developing 
+                        cross-platform mobile applications that prioritize user experience and 
+                        accessibility. I'm particularly interested in healthcare technology and 
+                        how mobile solutions can improve patient outcomes.
+                    </p>
+                    <div class="skills">
+                        <h3>Skills & Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Dart</span>
+                            <span class="skill-tag">Healthcare Tech</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Connect with Me</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <p>&copy; 2024 Ngọc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add Content Modals -->
+    <div id="addAppModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Mobile App</h2>
+            <form id="addAppForm">
+                <input type="text" id="appName" placeholder="App Name" required>
+                <textarea id="appDescription" placeholder="App Description" required></textarea>
+                <input type="text" id="appTechnology" placeholder="Technology Used">
+                <input type="text" id="appCategory" placeholder="Category">
+                <button type="submit" class="btn btn-primary">Add App</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="addContentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Medical Content</h2>
+            <form id="addContentForm">
+                <input type="text" id="contentTitle" placeholder="Content Title" required>
+                <textarea id="contentText" placeholder="Content Text" required></textarea>
+                <input type="text" id="contentTags" placeholder="Tags (comma-separated)">
+                <button type="submit" class="btn btn-primary">Add Content</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="addPostModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Blog Post</h2>
+            <form id="addPostForm">
+                <input type="text" id="postTitle" placeholder="Post Title" required>
+                <textarea id="postContent" placeholder="Post Content" required></textarea>
+                <input type="text" id="postTags" placeholder="Tags (comma-separated)">
+                <button type="submit" class="btn btn-primary">Add Post</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
